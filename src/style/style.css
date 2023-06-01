@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: linear-gradient(90deg, hsla(0, 0%, 0%, 1) 0%, hsla(115, 100%, 41%, 1) 100%);
+    color: #fff;
+    font-family: "effra", "Helvetica", sans-serif;
+}
+
+.page-inner {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background: url(../img/bg-pattern.png), linear-gradient(to left, rgba(247, 247, 247, 0.1), #222222);
+    height: 100vh;
+}
+
+.logo-wrapper {
+    position: relative;
+    border-radius: 100%;
+    width: 305px;
+    height: 305px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+    transform-style: preserve-3d;
+}
+
+.logo-wrapper::before {
+    content: "";
+    position: absolute;
+    border: 2px dashed #eee;
+    transform: translateZ(-25px) scale(1.2);
+    width: inherit;
+    height: inherit;
+    border-radius: inherit;
+}
+
+.logo-wrapper:hover {
+    box-shadow: rgb(0 0 0 / 25%) 1px 5px 40px 2px;
+}
+
+.logo-inner {
+    background-color: #fff;
+    border-radius: 100%;
+    padding: 50px;
+    transform: translateZ(30px);
+}
+
+.N-logo {
+    height: 200px;
+    width: 200px;
+}
+
+.personal-info {
+    position: absolute;
+    bottom: 3vh;
+    text-transform: uppercase;
+    padding-bottom: 60px;
+    text-align: center;
+}
+
+.personal-info h1,
+h2 {
+    font-weight: 100;
+}
+
+.personal-info h2 {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.17em;
+    margin: 7px;
+}
+
+.links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.links i {
+    color: #fff;
+    font-size: 35px;
+}
+
+@media (max-width: 1400px) {
+    .logo-wrapper {
+        bottom: 60px;
+    }
+}
